@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Music Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="player">
+            <div class="current-song">
+                <img src="assets/default-cover.jpg" alt="Current Song" class="cover">
+                <div class="song-info">
+                    <h2 class="title">"2024"</h2>
+                    <p class="artist">CARTI AI</p>
+                </div>
+            </div>
+            <audio id="audio" controls>
+                <source src="yeat.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="controls">
+                <button id="prev">Previous</button>
+                <button id="play">Play</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+        <div class="library">
+            <!-- List of songs -->
+            <div class="song">
+                <img src="assets/song-cover.jpg" alt="Song Cover" class="cover">
+                <div class="song-info">
+                    <h3 class="title">Sidëwayz 2</h3>
+                    <p class="artist">YEAT</p>
+                </div>
+                <button class="play-song" data-src="yeat.mp3">Play</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
